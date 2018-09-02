@@ -91,18 +91,18 @@
 
 
 
-<meta name="description" content="mysql操作命令总结​    以下是对mysql基本操作命令进行的总结，只是针对单表进行的一些操作，不包括多表操作。">
+<meta name="description" content="以下是对mysql基本操作命令进行的总结，只是针对单表进行的一些操作，不包括多表操作。">
 <meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql操作命令总结">
 <meta property="og:url" content="http://yoursite.com/2018/09/01/mysql操作命令总结/index.html">
 <meta property="og:site_name" content="Thorn的分享小站">
-<meta property="og:description" content="mysql操作命令总结​    以下是对mysql基本操作命令进行的总结，只是针对单表进行的一些操作，不包括多表操作。">
+<meta property="og:description" content="以下是对mysql基本操作命令进行的总结，只是针对单表进行的一些操作，不包括多表操作。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-01T10:06:57.460Z">
+<meta property="og:updated_time" content="2018-09-02T12:14:41.364Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql操作命令总结">
-<meta name="twitter:description" content="mysql操作命令总结​    以下是对mysql基本操作命令进行的总结，只是针对单表进行的一些操作，不包括多表操作。">
+<meta name="twitter:description" content="以下是对mysql基本操作命令进行的总结，只是针对单表进行的一些操作，不包括多表操作。">
 
 
 
@@ -384,7 +384,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,983
+                  3,058
                 </span>
               
 
@@ -421,7 +421,7 @@
       
 
       
-        <h3 id="mysql操作命令总结"><a href="#mysql操作命令总结" class="headerlink" title="mysql操作命令总结"></a>mysql操作命令总结</h3><p>​    以下是对mysql基本操作命令进行的总结，只是针对单表进行的一些操作，不包括多表操作。</p>
+        <p>以下是对mysql基本操作命令进行的总结，只是针对单表进行的一些操作，不包括多表操作。</p>
 <a id="more"></a>
 <h4 id="mysql服务命令"><a href="#mysql服务命令" class="headerlink" title="mysql服务命令"></a>mysql服务命令</h4><p>启动mysql服务：net start mysql</p>
 <p>关闭mysql服务：ner stop mysql</p>
@@ -458,6 +458,92 @@
 <li><p>datetime:日期时间类型 yyyy-MM-dd hh:mm:ss</p>
 </li>
 </ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">指定值和范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>char</code></td>
+<td style="text-align:center">String(0~255)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>varchar</code></td>
+<td style="text-align:center">String(0~255)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>tinytext</code></td>
+<td style="text-align:center">String(0~255)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>text</code></td>
+<td style="text-align:center">String(0~65536)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>blob</code></td>
+<td style="text-align:center">String(0~65536)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>mediumtext</code></td>
+<td style="text-align:center">String(0~16777215)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>mediumblob</code></td>
+<td style="text-align:center">String(0~16777215)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>longblob</code></td>
+<td style="text-align:center">String(0~4294967295)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>int</code></td>
+<td style="text-align:center">Integer(-214847668~214847667)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>bigint</code></td>
+<td style="text-align:center">Integer(-9223372036854775808~9223372036854775807)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>float</code></td>
+<td style="text-align:center">decimal(精确到23位小数)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>double</code></td>
+<td style="text-align:center">decimal(24~54位小数)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>decimal</code></td>
+<td style="text-align:center">将<code>double</code>转储为字符串形式</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>date</code></td>
+<td style="text-align:center"><em>YYYY-MM-DD</em></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>datetime</code></td>
+<td style="text-align:center"><em>YYYY-MM-DD HH:MM:SS</em></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>timestamp</code></td>
+<td style="text-align:center"><em>YYYYMMDDHHMMSS</em></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>time</code></td>
+<td style="text-align:center"><em>HH:MM:SS</em></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>enum</code></td>
+<td style="text-align:center">选项值之一</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>set</code></td>
+<td style="text-align:center">选项值子集</td>
+</tr>
+</tbody>
+</table>
 <h4 id="mysql常用约束"><a href="#mysql常用约束" class="headerlink" title="mysql常用约束"></a>mysql常用约束</h4><ul>
 <li>​主键约束：primary key (保证数据唯一性),不能重复，不能为null</li>
 <li>唯一约束：unique [key],不能重复，可以为null</li>
@@ -533,8 +619,10 @@
 <ol>
 <li>having是在分组后对数据进行过滤,where是在分组前对数据进行过滤             </li>
 <li>having后面可以使用分组函数(统计函数)</li>
-<li>where后面不可以使用分组函数。</li>
-<li>where是对分组前记录的条件，如果某行记录没有满足WHERE子句的条件，那么这行记录不会参加分组；而        having是对分组后数据的约束。</li>
+<li>where后面不可以使用分组函数。<ol start="4">
+<li>where是对分组前记录的条件，如果某行记录没有满足WHERE子句的条件，那么这行记录不会参加分组；而    having是对分组后数据的约束。</li>
+</ol>
+</li>
 </ol>
 <h6 id="LIMIT限制（分页查询）"><a href="#LIMIT限制（分页查询）" class="headerlink" title="LIMIT限制（分页查询）"></a>LIMIT限制（分页查询）</h6><p>LIMIT用来限定查询结果的起始行，以及总行数。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#查询前5行数据</span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">LIMIT</span> <span class="number">0</span>,<span class="number">5</span>;</span><br><span class="line">#查询5到10行数据</span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">LIMIT</span> <span class="number">5</span>,<span class="number">5</span>;</span><br></pre></td></tr></table></figure>
@@ -757,7 +845,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#mysql操作命令总结"><span class="nav-number">1.</span> <span class="nav-text">mysql操作命令总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql服务命令"><span class="nav-number">1.1.</span> <span class="nav-text">mysql服务命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql连接命令"><span class="nav-number">1.2.</span> <span class="nav-text">mysql连接命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql基本数据类型"><span class="nav-number">1.3.</span> <span class="nav-text">mysql基本数据类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql常用约束"><span class="nav-number">1.4.</span> <span class="nav-text">mysql常用约束</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql数据库操作命令"><span class="nav-number">1.5.</span> <span class="nav-text">mysql数据库操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#查询数据库"><span class="nav-number">1.5.1.</span> <span class="nav-text">查询数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建数据库"><span class="nav-number">1.5.2.</span> <span class="nav-text">创建数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改数据库"><span class="nav-number">1.5.3.</span> <span class="nav-text">修改数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#删除数据库"><span class="nav-number">1.5.4.</span> <span class="nav-text">删除数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他操作"><span class="nav-number">1.5.5.</span> <span class="nav-text">其他操作</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql数据表操作命令"><span class="nav-number">1.6.</span> <span class="nav-text">mysql数据表操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#查询数据表"><span class="nav-number">1.6.1.</span> <span class="nav-text">查询数据表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建数据表"><span class="nav-number">1.6.2.</span> <span class="nav-text">创建数据表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改数据表"><span class="nav-number">1.6.3.</span> <span class="nav-text">修改数据表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#删除数据表"><span class="nav-number">1.6.4.</span> <span class="nav-text">删除数据表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他操作-1"><span class="nav-number">1.6.5.</span> <span class="nav-text">其他操作</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql数据操作命令"><span class="nav-number">1.7.</span> <span class="nav-text">mysql数据操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#查询数据"><span class="nav-number">1.7.1.</span> <span class="nav-text">查询数据</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#简单查询"><span class="nav-number">1.7.1.1.</span> <span class="nav-text">简单查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#条件查询"><span class="nav-number">1.7.1.2.</span> <span class="nav-text">条件查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#模糊查询"><span class="nav-number">1.7.1.3.</span> <span class="nav-text">模糊查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#字段控制查询"><span class="nav-number">1.7.1.4.</span> <span class="nav-text">字段控制查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#排序"><span class="nav-number">1.7.1.5.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#聚合函数"><span class="nav-number">1.7.1.6.</span> <span class="nav-text">聚合函数</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#分组查询"><span class="nav-number">1.7.1.7.</span> <span class="nav-text">分组查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#LIMIT限制（分页查询）"><span class="nav-number">1.7.1.8.</span> <span class="nav-text">LIMIT限制（分页查询）</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#增加数据"><span class="nav-number">1.7.2.</span> <span class="nav-text">增加数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改数据"><span class="nav-number">1.7.3.</span> <span class="nav-text">修改数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#删除数据"><span class="nav-number">1.7.4.</span> <span class="nav-text">删除数据</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql服务命令"><span class="nav-number">1.</span> <span class="nav-text">mysql服务命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql连接命令"><span class="nav-number">2.</span> <span class="nav-text">mysql连接命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql基本数据类型"><span class="nav-number">3.</span> <span class="nav-text">mysql基本数据类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql常用约束"><span class="nav-number">4.</span> <span class="nav-text">mysql常用约束</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql数据库操作命令"><span class="nav-number">5.</span> <span class="nav-text">mysql数据库操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#查询数据库"><span class="nav-number">5.1.</span> <span class="nav-text">查询数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建数据库"><span class="nav-number">5.2.</span> <span class="nav-text">创建数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改数据库"><span class="nav-number">5.3.</span> <span class="nav-text">修改数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#删除数据库"><span class="nav-number">5.4.</span> <span class="nav-text">删除数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他操作"><span class="nav-number">5.5.</span> <span class="nav-text">其他操作</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql数据表操作命令"><span class="nav-number">6.</span> <span class="nav-text">mysql数据表操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#查询数据表"><span class="nav-number">6.1.</span> <span class="nav-text">查询数据表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建数据表"><span class="nav-number">6.2.</span> <span class="nav-text">创建数据表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改数据表"><span class="nav-number">6.3.</span> <span class="nav-text">修改数据表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#删除数据表"><span class="nav-number">6.4.</span> <span class="nav-text">删除数据表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他操作-1"><span class="nav-number">6.5.</span> <span class="nav-text">其他操作</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql数据操作命令"><span class="nav-number">7.</span> <span class="nav-text">mysql数据操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#查询数据"><span class="nav-number">7.1.</span> <span class="nav-text">查询数据</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#简单查询"><span class="nav-number">7.1.1.</span> <span class="nav-text">简单查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#条件查询"><span class="nav-number">7.1.2.</span> <span class="nav-text">条件查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#模糊查询"><span class="nav-number">7.1.3.</span> <span class="nav-text">模糊查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#字段控制查询"><span class="nav-number">7.1.4.</span> <span class="nav-text">字段控制查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#排序"><span class="nav-number">7.1.5.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#聚合函数"><span class="nav-number">7.1.6.</span> <span class="nav-text">聚合函数</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#分组查询"><span class="nav-number">7.1.7.</span> <span class="nav-text">分组查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#LIMIT限制（分页查询）"><span class="nav-number">7.1.8.</span> <span class="nav-text">LIMIT限制（分页查询）</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#增加数据"><span class="nav-number">7.2.</span> <span class="nav-text">增加数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改数据"><span class="nav-number">7.3.</span> <span class="nav-text">修改数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#删除数据"><span class="nav-number">7.4.</span> <span class="nav-text">删除数据</span></a></li></ol></li></ol></div>
             
 
           </div>
