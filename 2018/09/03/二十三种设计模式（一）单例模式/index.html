@@ -91,18 +91,18 @@
 
 
 
-<meta name="description" content="​    单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结 。这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。 接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，">
+<meta name="description" content="单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结 。这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。 接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，尽可能的包">
 <meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二十三种设计模式（一）单例模式">
 <meta property="og:url" content="http://yoursite.com/2018/09/03/二十三种设计模式（一）单例模式/index.html">
 <meta property="og:site_name" content="Thorn的分享小站">
-<meta property="og:description" content="​    单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结 。这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。 接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，">
+<meta property="og:description" content="单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结 。这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。 接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，尽可能的包">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-03T09:21:13.247Z">
+<meta property="og:updated_time" content="2018-09-03T09:24:19.154Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="二十三种设计模式（一）单例模式">
-<meta name="twitter:description" content="​    单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结 。这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。 接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，">
+<meta name="twitter:description" content="单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结 。这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。 接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，尽可能的包">
 
 
 
@@ -399,12 +399,13 @@
       
 
       
-        <p>​    单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结</p>
-<p>。这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。</p>
+        <pre><code>单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结
+</code></pre><p>。这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。</p>
 <p>接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，尽可能的包括大部分内容，所以更新速度可能较慢。</p>
 <p>对于一些问题，有兴趣深入了解的朋友，我也在文章后面附上了我参考的一些链接，希望我们可以共同进步。</p>
-<h3 id="单例模式概念"><a href="#单例模式概念" class="headerlink" title="单例模式概念"></a>单例模式概念</h3><p>​    单例模式，是一种常用的软件设计模式。在它的核心结构中只包含一个被称为单例的特殊类。通过单例模式可以保证系统中，应用该模式的类一个类只有一个实例。即一个类只有一个对象实例。</p>
-<h3 id="单例模式的特点"><a href="#单例模式的特点" class="headerlink" title="单例模式的特点"></a>单例模式的特点</h3><ul>
+<a id="more"></a>
+<h3 id="单例模式概念"><a href="#单例模式概念" class="headerlink" title="单例模式概念"></a>单例模式概念</h3><pre><code>单例模式，是一种常用的软件设计模式。在它的核心结构中只包含一个被称为单例的特殊类。通过单例模式可以保证系统中，应用该模式的类一个类只有一个实例。即一个类只有一个对象实例。
+</code></pre><h3 id="单例模式的特点"><a href="#单例模式的特点" class="headerlink" title="单例模式的特点"></a>单例模式的特点</h3><ul>
 <li>单例模式只能有一个实例</li>
 <li><p>单例模式必须自己创建自己的唯一实例</p>
 </li>
@@ -510,8 +511,8 @@
 <p>但是上面写法中的枚举实现就可以解决这个问题，如果使用枚举实现单例，在利用反射创建对象</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获得构造器</span></span><br><span class="line">Constructor con = SingletonEnum.class.getDeclaredConstructor();</span><br><span class="line"><span class="comment">//设置为可访问</span></span><br><span class="line">con.setAccessible(<span class="keyword">true</span>);</span><br><span class="line"><span class="comment">//构造两个不同的对象</span></span><br><span class="line">SingletonEnum singleton1 = (SingletonEnum)con.newInstance();</span><br><span class="line">SingletonEnum singleton2 = (SingletonEnum)con.newInstance();</span><br><span class="line"><span class="comment">//验证是否是不同对象</span></span><br><span class="line">System.out.println(singleton1.equals(singleton2));</span><br><span class="line"> </span><br><span class="line">执行获得构造器这一步的时候，抛出了如下异常：</span><br><span class="line">Exception in thread <span class="string">"main"</span> java.lang.NoSuchMethodException: com.lj.Singleton.&lt;init&gt;()</span><br><span class="line">	at java.lang.Class.getConstructor0(Class.java:<span class="number">3082</span>)</span><br><span class="line">	at java.lang.Class.getDeclaredConstructor(Class.java:<span class="number">2178</span>)</span><br><span class="line">	at com.lj.Text01.main(Text01.java:<span class="number">7</span>)</span><br></pre></td></tr></table></figure>
 <p>JVM会阻止反射获取枚举的私有构造方法，所有使用枚举可以解决反射重复创建单例对象的问题。</p>
-<h4 id="序列化问题"><a href="#序列化问题" class="headerlink" title="序列化问题"></a>序列化问题</h4><p>​    下面我们先简要地回顾下对象的序列化。一般来说，一个类实现了 Serializable接口，我们就可以把它往内存里写再从内存里读出而”组装”成一个跟原来一模一样的对象。不过当序列化遇到单例时，里边就有了个问题：从内存读出而组装的对象破坏了单例的规则。单例是要求一个JVM中只有一个类对象的，而现在通过反序列，一个新的对象克隆了出来。</p>
-<p>这样就会出现两个实例对象，破坏了单例模式的规则。</p>
+<h4 id="序列化问题"><a href="#序列化问题" class="headerlink" title="序列化问题"></a>序列化问题</h4><pre><code>下面我们先简要地回顾下对象的序列化。一般来说，一个类实现了 Serializable接口，我们就可以把它往内存里写再从内存里读出而&quot;组装&quot;成一个跟原来一模一样的对象。不过当序列化遇到单例时，里边就有了个问题：从内存读出而组装的对象破坏了单例的规则。单例是要求一个JVM中只有一个类对象的，而现在通过反序列，一个新的对象克隆了出来。
+</code></pre><p>这样就会出现两个实例对象，破坏了单例模式的规则。</p>
 <p>我们该怎么解决那</p>
 <p>第一种方法：通过枚举实现单例模式，因为枚举的具有自由序列化的特性，所以枚举类对象被反序列化的时候，保证反序列的返回结果是同一对象。</p>
 <p>第二种方法：在类中加入readUnshared()方法</p>
