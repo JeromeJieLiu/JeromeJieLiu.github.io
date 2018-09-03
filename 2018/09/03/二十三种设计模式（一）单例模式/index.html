@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="设计模式," />
 
 
 
@@ -91,17 +91,18 @@
 
 
 
-<meta name="description" content="title: 二十三种设计模式（一）单例模式date: 2018-09-03 11:46:15tags: 设计模式categories: java 单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结。 这篇文章对单例模式的大部分问题，都进行了总结描述，并">
+<meta name="description" content="单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结。 这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。 接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，尽可能的包">
+<meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Thorn的分享小站">
+<meta property="og:title" content="二十三种设计模式（一）单例模式">
 <meta property="og:url" content="http://yoursite.com/2018/09/03/二十三种设计模式（一）单例模式/index.html">
 <meta property="og:site_name" content="Thorn的分享小站">
-<meta property="og:description" content="title: 二十三种设计模式（一）单例模式date: 2018-09-03 11:46:15tags: 设计模式categories: java 单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结。 这篇文章对单例模式的大部分问题，都进行了总结描述，并">
+<meta property="og:description" content="单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结。 这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。 接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，尽可能的包">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-03T09:32:47.773Z">
+<meta property="og:updated_time" content="2018-09-03T09:45:44.091Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Thorn的分享小站">
-<meta name="twitter:description" content="title: 二十三种设计模式（一）单例模式date: 2018-09-03 11:46:15tags: 设计模式categories: java 单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结。 这篇文章对单例模式的大部分问题，都进行了总结描述，并">
+<meta name="twitter:title" content="二十三种设计模式（一）单例模式">
+<meta name="twitter:description" content="单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结。 这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。 接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，尽可能的包">
 
 
 
@@ -137,7 +138,7 @@
 
 
 
-  <title> | Thorn的分享小站</title>
+  <title>二十三种设计模式（一）单例模式 | Thorn的分享小站</title>
   
 
 
@@ -316,7 +317,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline"></h2>
+          <h2 class="post-title" itemprop="name headline">二十三种设计模式（一）单例模式</h2>
         
 
         <div class="post-meta">
@@ -340,6 +341,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -361,7 +384,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3,613
+                  3,587
                 </span>
               
 
@@ -398,19 +421,16 @@
       
 
       
-        <p>title: 二十三种设计模式（一）单例模式<br>date: 2018-09-03 11:46:15<br>tags: 设计模式<br>categories: java</p>
-<p>单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结。</p>
+        <p>单例模式可以说是23中设计模式中最容易的实现和理解的设计模式了，不过单例模式写很容易，但是写好就不容易了，因为单例模式中也隐藏了很多的问题，趁着这次机会，结合网上的一些博客，对单例模式做了一个总结。</p>
 <p>这篇文章对单例模式的大部分问题，都进行了总结描述，并提供了解决方法。</p>
 <p>接下来还会对其他设计模式进行总结，不过我对一些问题，总喜欢尽可能的全面了解，所以每一种设计模式，我都会参考阅读很多文献，尽可能的包括大部分内容，所以更新速度可能较慢。</p>
 <p>对于一些问题，有兴趣深入了解的朋友，我也在文章后面附上了我参考的一些链接，希望我们可以共同进步。</p>
 <a id="more"></a>
-<h3 id="单例模式概念"><a href="#单例模式概念" class="headerlink" title="单例模式概念"></a>单例模式概念</h3><pre><code>单例模式，是一种常用的软件设计模式。在它的核心结构中只包含一个被称为单例的特殊类。通过单例模式可以保证系统中，应用该模式的类一个类只有一个实例。即一个类只有一个对象实例。
-</code></pre><h3 id="单例模式的特点"><a href="#单例模式的特点" class="headerlink" title="单例模式的特点"></a>单例模式的特点</h3><ul>
+<h3 id="单例模式概念"><a href="#单例模式概念" class="headerlink" title="单例模式概念"></a>单例模式概念</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">单例模式，是一种常用的软件设计模式。在它的核心结构中只包含一个被称为单例的特殊类。通过单例模式可以保证系统中，应用该模式的类一个类只有一个实例。即一个类只有一个对象实例。</span><br></pre></td></tr></table></figure>
+<h3 id="单例模式的特点"><a href="#单例模式的特点" class="headerlink" title="单例模式的特点"></a>单例模式的特点</h3><ul>
 <li>单例模式只能有一个实例</li>
-<li><p>单例模式必须自己创建自己的唯一实例</p>
-</li>
-<li><p>单例模式必须保证给所有其他对象提供这一实例</p>
-</li>
+<li>单例模式必须自己创建自己的唯一实例</li>
+<li>单例模式必须保证给所有其他对象提供这一实例</li>
 </ul>
 <h3 id="单例模式的应用场景"><a href="#单例模式的应用场景" class="headerlink" title="单例模式的应用场景"></a>单例模式的应用场景</h3><p>需求：在前端创建工具箱窗口，工具箱要么不出现，出现也只出现一个</p>
 <p>遇到问题：每次点击菜单都会重复创建“工具箱”窗口。</p>
@@ -448,13 +468,11 @@
 <p>如果在多线程环境下,一个线程通过了if(instence==null)判断，</p>
 <p>还没有创建实例，但是另一个线程也通过判断进来了，这样就会</p>
 <p>产生多个实例。</p>
-<p>####懒汉式变形一（同步代码块 线程安全）</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instence;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstence</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">synchronized</span>(Singleton.class)&#123;</span><br><span class="line">        	<span class="keyword">if</span>(instence == <span class="keyword">null</span>)&#123;</span><br><span class="line">        		instence = <span class="keyword">new</span> Singleton();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instence;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="懒汉式变形一（同步代码块-线程安全）"><a href="#懒汉式变形一（同步代码块-线程安全）" class="headerlink" title="懒汉式变形一（同步代码块 线程安全）"></a>懒汉式变形一（同步代码块 线程安全）</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instence;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstence</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">synchronized</span>(Singleton.class)&#123;</span><br><span class="line">        	<span class="keyword">if</span>(instence == <span class="keyword">null</span>)&#123;</span><br><span class="line">        		instence = <span class="keyword">new</span> Singleton();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instence;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>优点：这种写法加上了同步代码块，保证了线程安全，避免了上面的写法在多线程情况下出现的问题。</p>
 <p>缺点：这样写会造成每次调用静态方法获取实例对象,都需要进入同步代码块，造成效率低下，因为同步会造成效率的浪费，</p>
 <p>我们要清楚同步是以牺牲效率来换取安全的。</p>
-<p>####懒汉式变形二（双重检查 优化）</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instence;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstence</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instence == <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">synchronized</span>(Singleton.class)&#123;</span><br><span class="line">            	<span class="keyword">if</span>(instence == <span class="keyword">null</span>)&#123;</span><br><span class="line">        			instence = <span class="keyword">new</span> Singleton();</span><br><span class="line">        		&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instence;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="懒汉式变形二（双重检查-优化）"><a href="#懒汉式变形二（双重检查-优化）" class="headerlink" title="懒汉式变形二（双重检查 优化）"></a>懒汉式变形二（双重检查 优化）</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instence;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstence</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instence == <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">synchronized</span>(Singleton.class)&#123;</span><br><span class="line">            	<span class="keyword">if</span>(instence == <span class="keyword">null</span>)&#123;</span><br><span class="line">        			instence = <span class="keyword">new</span> Singleton();</span><br><span class="line">        		&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instence;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这种写法是对<strong>变形一</strong>的优化，在外层又加了一层检查，即在同步代码块执行之前先判断实例对象是否存在。</p>
 <p>优点：我们不用再每次调用静态方法获取对象的时候都进行同步，只用进入同步代码块一次就好了。</p>
 <p>大大提高了效率。</p>
@@ -485,8 +503,7 @@
 <p>b、 禁止指令重排序</p>
 <p>这样就可以保证在多线程情况下变量访问前后因为指令重排序造成的bug</p>
 <p>这样的话，instance对象的引用要么指向null，要么指向一个初始化完毕的Instance，而不会出现某个中间态，保证了安全。</p>
-<p>####静态内部类实现单例</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">LazyHolder</span> </span>&#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> LazyHolder.INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="静态内部类实现单例"><a href="#静态内部类实现单例" class="headerlink" title="静态内部类实现单例"></a>静态内部类实现单例</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">LazyHolder</span> </span>&#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> LazyHolder.INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>注意：</strong></p>
 <ol>
 <li>从外部无法访问静态内部类LazyHolder，只有当调用Singleton.getInstance方法的时候，才能得到单例对象INSTANCE。</li>
@@ -499,8 +516,7 @@
 <p>最后，至于懒加载（lazy-loading），考虑到一般情况不存在调用单例类又不需要实例化单例的情况，所以即便不能做到很好的懒加载（lazy-loading），也并不是大问题。换言之，除了枚举这种方案，饿汉模式也在单例设计中广泛的被应用。</p>
 <p>所以单元素的枚举类型已经逐渐成为实现Singleton的最佳方法。</p>
 <p>不过具体如何使用，还是要结合实际开发中的具体情况来进行使用。</p>
-<h3 id="单例模式的问题"><a href="#单例模式的问题" class="headerlink" title="单例模式的问题"></a>单例模式的问题</h3><p>####反射问题</p>
-<p>j单例模式大都存在一个的问题，就是无法防止使用反射重复创建对象</p>
+<h3 id="单例模式的问题"><a href="#单例模式的问题" class="headerlink" title="单例模式的问题"></a>单例模式的问题</h3><h4 id="反射问题"><a href="#反射问题" class="headerlink" title="反射问题"></a>反射问题</h4><p>j单例模式大都存在一个的问题，就是无法防止使用反射重复创建对象</p>
 <p>利用反射打破单例步骤</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获得构造器</span></span><br><span class="line">Constructor con = Singleton.class.getDeclaredConstructor();</span><br><span class="line"><span class="comment">//设置为可访问</span></span><br><span class="line">con.setAccessible(<span class="keyword">true</span>);</span><br><span class="line"><span class="comment">//构造两个不同的对象</span></span><br><span class="line">Singleton singleton1 = (Singleton)con.newInstance();</span><br><span class="line">Singleton singleton2 = (Singleton)con.newInstance();</span><br><span class="line"><span class="comment">//验证是否是不同对象</span></span><br><span class="line">System.out.println(singleton1.equals(singleton2));</span><br></pre></td></tr></table></figure>
 <p> 代码可以简单归纳为三个步骤：</p>
@@ -511,12 +527,12 @@
 <p>但是上面写法中的枚举实现就可以解决这个问题，如果使用枚举实现单例，在利用反射创建对象</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获得构造器</span></span><br><span class="line">Constructor con = SingletonEnum.class.getDeclaredConstructor();</span><br><span class="line"><span class="comment">//设置为可访问</span></span><br><span class="line">con.setAccessible(<span class="keyword">true</span>);</span><br><span class="line"><span class="comment">//构造两个不同的对象</span></span><br><span class="line">SingletonEnum singleton1 = (SingletonEnum)con.newInstance();</span><br><span class="line">SingletonEnum singleton2 = (SingletonEnum)con.newInstance();</span><br><span class="line"><span class="comment">//验证是否是不同对象</span></span><br><span class="line">System.out.println(singleton1.equals(singleton2));</span><br><span class="line"> </span><br><span class="line">执行获得构造器这一步的时候，抛出了如下异常：</span><br><span class="line">Exception in thread <span class="string">"main"</span> java.lang.NoSuchMethodException: com.lj.Singleton.&lt;init&gt;()</span><br><span class="line">	at java.lang.Class.getConstructor0(Class.java:<span class="number">3082</span>)</span><br><span class="line">	at java.lang.Class.getDeclaredConstructor(Class.java:<span class="number">2178</span>)</span><br><span class="line">	at com.lj.Text01.main(Text01.java:<span class="number">7</span>)</span><br></pre></td></tr></table></figure>
 <p>JVM会阻止反射获取枚举的私有构造方法，所有使用枚举可以解决反射重复创建单例对象的问题。</p>
-<h4 id="序列化问题"><a href="#序列化问题" class="headerlink" title="序列化问题"></a>序列化问题</h4><pre><code>下面我们先简要地回顾下对象的序列化。一般来说，一个类实现了 Serializable接口，我们就可以把它往内存里写再从内存里读出而&quot;组装&quot;成一个跟原来一模一样的对象。不过当序列化遇到单例时，里边就有了个问题：从内存读出而组装的对象破坏了单例的规则。单例是要求一个JVM中只有一个类对象的，而现在通过反序列，一个新的对象克隆了出来。
-</code></pre><p>这样就会出现两个实例对象，破坏了单例模式的规则。</p>
+<h4 id="序列化问题"><a href="#序列化问题" class="headerlink" title="序列化问题"></a>序列化问题</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">下面我们先简要地回顾下对象的序列化。一般来说，一个类实现了 Serializable接口，我们就可以把它往内存里写再从内存里读出而&quot;组装&quot;成一个跟原来一模一样的对象。不过当序列化遇到单例时，里边就有了个问题：从内存读出而组装的对象破坏了单例的规则。单例是要求一个JVM中只有一个类对象的，而现在通过反序列，一个新的对象克隆了出来。</span><br></pre></td></tr></table></figure>
+<p>这样就会出现两个实例对象，破坏了单例模式的规则。</p>
 <p>我们该怎么解决那</p>
 <p>第一种方法：通过枚举实现单例模式，因为枚举的具有自由序列化的特性，所以枚举类对象被反序列化的时候，保证反序列的返回结果是同一对象。</p>
 <p>第二种方法：在类中加入readUnshared()方法</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton implements Serializable&#123;</span><br><span class="line">    private volatile static Singleton instence;</span><br><span class="line">    </span><br><span class="line">    private Singleton()&#123;&#125;</span><br><span class="line">    </span><br><span class="line">    public static Singleton getInstence()&#123;</span><br><span class="line">        if(instence == null)&#123;</span><br><span class="line">            synchronized(Singleton.class)&#123;</span><br><span class="line">            	if(instence == null)&#123;</span><br><span class="line">        			instence = new Singleton();</span><br><span class="line">        		&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return instence;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">  	private Object readResolve() throws ObjectStreamException &#123; </span><br><span class="line">   		return instence; </span><br><span class="line">  	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> <span class="keyword">implements</span> <span class="title">Serializable</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> Singleton instence;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstence</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instence == <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">synchronized</span>(Singleton.class)&#123;</span><br><span class="line">            	<span class="keyword">if</span>(instence == <span class="keyword">null</span>)&#123;</span><br><span class="line">        			instence = <span class="keyword">new</span> Singleton();</span><br><span class="line">        		&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instence;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">  	<span class="function"><span class="keyword">private</span> Object <span class="title">readResolve</span><span class="params">()</span> <span class="keyword">throws</span> ObjectStreamException </span>&#123; </span><br><span class="line">   		<span class="keyword">return</span> instence; </span><br><span class="line">  	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这样，当JVM从内存中反序列化地”组装”一个新对象时，就会自动调用这个 readResolve方法来返回我们指定好的对象了，单例规则也就得到了保证。 </p>
 <p>readResolve方法的调用流程：ObjectInputStream类的readOrdinaryObject方法，在调用完readSerialData（）方法后，就调用了 ObjectStreamClass类的Object invokeReadResolve(Object obj)方法，通过反射调用了我们自己写的readResolve方法。</p>
 <p>简单来说这就是浅拷贝和深拷贝的区别</p>
@@ -543,6 +559,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/设计模式/" rel="tag"><i class="fa fa-tag"></i> 设计模式</a>
+          
+        </div>
       
 
       
@@ -720,7 +742,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式概念"><span class="nav-number">1.</span> <span class="nav-text">单例模式概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式的特点"><span class="nav-number">2.</span> <span class="nav-text">单例模式的特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式的应用场景"><span class="nav-number">3.</span> <span class="nav-text">单例模式的应用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式的实现思路"><span class="nav-number">4.</span> <span class="nav-text">单例模式的实现思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式的写法"><span class="nav-number">5.</span> <span class="nav-text">单例模式的写法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#饿汗式"><span class="nav-number">5.1.</span> <span class="nav-text">饿汗式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#懒汉式"><span class="nav-number">5.2.</span> <span class="nav-text">懒汉式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#happens-before原则"><span class="nav-number">5.2.1.</span> <span class="nav-text">happens-before原则</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#懒汉式变形三（volatile-优化）"><span class="nav-number">5.3.</span> <span class="nav-text">懒汉式变形三（volatile 优化）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#枚举实现单例模式"><span class="nav-number">5.4.</span> <span class="nav-text">枚举实现单例模式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式的问题"><span class="nav-number">6.</span> <span class="nav-text">单例模式的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#序列化问题"><span class="nav-number">6.1.</span> <span class="nav-text">序列化问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式概念"><span class="nav-number">1.</span> <span class="nav-text">单例模式概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式的特点"><span class="nav-number">2.</span> <span class="nav-text">单例模式的特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式的应用场景"><span class="nav-number">3.</span> <span class="nav-text">单例模式的应用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式的实现思路"><span class="nav-number">4.</span> <span class="nav-text">单例模式的实现思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式的写法"><span class="nav-number">5.</span> <span class="nav-text">单例模式的写法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#饿汗式"><span class="nav-number">5.1.</span> <span class="nav-text">饿汗式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#懒汉式"><span class="nav-number">5.2.</span> <span class="nav-text">懒汉式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#懒汉式变形一（同步代码块-线程安全）"><span class="nav-number">5.3.</span> <span class="nav-text">懒汉式变形一（同步代码块 线程安全）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#懒汉式变形二（双重检查-优化）"><span class="nav-number">5.4.</span> <span class="nav-text">懒汉式变形二（双重检查 优化）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#happens-before原则"><span class="nav-number">5.4.1.</span> <span class="nav-text">happens-before原则</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#懒汉式变形三（volatile-优化）"><span class="nav-number">5.5.</span> <span class="nav-text">懒汉式变形三（volatile 优化）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#静态内部类实现单例"><span class="nav-number">5.6.</span> <span class="nav-text">静态内部类实现单例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#枚举实现单例模式"><span class="nav-number">5.7.</span> <span class="nav-text">枚举实现单例模式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式的问题"><span class="nav-number">6.</span> <span class="nav-text">单例模式的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#反射问题"><span class="nav-number">6.1.</span> <span class="nav-text">反射问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#序列化问题"><span class="nav-number">6.2.</span> <span class="nav-text">序列化问题</span></a></li></ol></li></ol></div>
             
 
           </div>
